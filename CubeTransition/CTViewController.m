@@ -34,9 +34,7 @@ CGFloat _frontRad = 0;
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor darkGrayColor];
-    
+    [super viewDidLoad];    
 	// Do any additional setup after loading the view, typically from a nib.
     
     CATransform3D r;
@@ -126,6 +124,7 @@ CGFloat _frontRad = 0;
     _parent.sublayerTransform = CATransform3DTranslate(_parent.sublayerTransform, 0, 0, CUBE_WIDTH / 2);
     [CATransaction commit];
     _frontRad += M_PI * 0.5;
+    self.pageControl.currentPage = (self.pageControl.currentPage + self.pageControl.numberOfPages - 1) % self.pageControl.numberOfPages;
 }
 
 - (IBAction)action2:(id)sender {
@@ -136,6 +135,7 @@ CGFloat _frontRad = 0;
     _parent.sublayerTransform = CATransform3DTranslate(_parent.sublayerTransform, 0, 0, CUBE_WIDTH / 2);
     [CATransaction commit];
     _frontRad -= M_PI * 0.5;
+    self.pageControl.currentPage = (self.pageControl.currentPage + 1) % self.pageControl.numberOfPages;
 }
 
 - (void)initParentTransform {

@@ -45,17 +45,26 @@
                                     <action selector="action2:" destination="2" eventType="touchUpInside" id="rYi-MH-kPM"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="U57-ud-6hu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="puv-5I-Hk7"/>
+                                </constraints>
+                            </pageControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m90-hw-QM2" firstAttribute="bottom" secondItem="0Wv-vx-cOv" secondAttribute="bottom" type="default" id="193-j5-53h"/>
                             <constraint firstItem="0Wv-vx-cOv" firstAttribute="top" secondItem="m90-hw-QM2" secondAttribute="top" type="default" id="2N7-BK-dtE"/>
-                            <constraint firstItem="m90-hw-QM2" firstAttribute="baseline" secondItem="0Wv-vx-cOv" secondAttribute="baseline" type="default" id="Mix-de-Rcp"/>
                             <constraint firstAttribute="bottom" secondItem="0Wv-vx-cOv" secondAttribute="bottom" constant="19" id="Pfc-qX-hYO"/>
+                            <constraint firstItem="U57-ud-6hu" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="W9u-dy-Rjf"/>
                             <constraint firstAttribute="trailing" secondItem="m90-hw-QM2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="YSH-bj-ddd"/>
+                            <constraint firstAttribute="bottom" secondItem="U57-ud-6hu" secondAttribute="bottom" constant="107" id="cAw-3C-Bip"/>
                             <constraint firstItem="0Wv-vx-cOv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="u5X-az-ctJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="U57-ud-6hu" id="uD0-8L-3L2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,8 +76,6 @@
             <relationships>
                 <relationship kind="action" name="action1:"/>
                 <relationship kind="action" name="action2:"/>
-                <relationship kind="action" name="sliderChanged:"/>
-                <relationship kind="action" name="sliderTouchUp:"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
