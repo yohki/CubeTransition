@@ -23,6 +23,7 @@
 		40B86A8D164772A100CA9D65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B86A68164772A000CA9D65 /* Foundation.framework */; };
 		40B86A95164772A100CA9D65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40B86A93164772A100CA9D65 /* InfoPlist.strings */; };
 		40B86A98164772A100CA9D65 /* CubeTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B86A97164772A100CA9D65 /* CubeTransitionTests.m */; };
+		40B86AA21647739700CA9D65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B86AA11647739700CA9D65 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		40B86A94164772A100CA9D65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40B86A96164772A100CA9D65 /* CubeTransitionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeTransitionTests.h; sourceTree = "<group>"; };
 		40B86A97164772A100CA9D65 /* CubeTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeTransitionTests.m; sourceTree = "<group>"; };
+		40B86AA11647739700CA9D65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B86AA21647739700CA9D65 /* QuartzCore.framework in Frameworks */,
 				40B86A67164772A000CA9D65 /* UIKit.framework in Frameworks */,
 				40B86A69164772A000CA9D65 /* Foundation.framework in Frameworks */,
 				40B86A6B164772A000CA9D65 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		40B86A65164772A000CA9D65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40B86AA11647739700CA9D65 /* QuartzCore.framework */,
 				40B86A66164772A000CA9D65 /* UIKit.framework */,
 				40B86A68164772A000CA9D65 /* Foundation.framework */,
 				40B86A6A164772A000CA9D65 /* CoreGraphics.framework */,
@@ -448,6 +452,7 @@
 				40B86A9D164772A100CA9D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40B86A9E164772A100CA9D65 /* Build configuration list for PBXNativeTarget "CubeTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				40B86AA0164772A100CA9D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
