@@ -172,9 +172,11 @@ CGFloat _frontRad = 0;
     if (ratio < -0.5) {
         [self rotateTo:_frontRad - M_PI * 0.5 withAnimation:YES];
         _frontRad = _frontRad - M_PI * 0.5;
+        self.pageControl.currentPage = (self.pageControl.currentPage + 1) % self.pageControl.numberOfPages;
     } else if (0.5 < ratio) {
         [self rotateTo:_frontRad + M_PI * 0.5 withAnimation:YES];
         _frontRad = _frontRad + M_PI * 0.5;
+        self.pageControl.currentPage = (self.pageControl.currentPage + self.pageControl.numberOfPages - 1) % self.pageControl.numberOfPages;
     } else {
         [self rotateTo:_frontRad withAnimation:YES];
         _frontRad = _frontRad;
